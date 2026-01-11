@@ -6,7 +6,7 @@ An educational lab demonstrating the implementation of **Active Directory Domain
 The objective of this project is to configure a Windows Server 2025 environment where a specific application (Microsoft Edge) is automatically launched upon user logon across all domain-joined workstations. This simulates real-world enterprise automation and policy enforcement.
 
 ## 🏗️ Lab Infrastructure
-* **Hypervisor:** Oracle VirtualBox
+* **Hypervisor:** Hyper V
 * **Domain Controller:** Windows Server 2025 (`corp.santo.com`)
 * **Client Machine:** Windows 10 Pro
 * **Network:** Isolated Internal Network with DHCP and DNS services.
@@ -61,7 +61,7 @@ To verify that the policy is working correctly on the Windows 10 client:
 | **Domain Connection** | Incorrect DNS configuration. | Ensure the client's DNS points directly to the DC IP. |
 | **Path Errors** | Incorrect file path. | Verify the `msedge.exe` path exists on the local client disk. |
 | **IP Conflict** | DHCP Scope overlap. | Check DHCP exclusions to ensure static IPs aren't being assigned to clients. |
-| **VM Performance** | Resource exhaustion. | Adjust RAM allocation in VirtualBox settings for the Server and Client. |
+| **VM Performance** | Resource exhaustion. | Adjust RAM allocation in Hyper V settings for the Server and Client. |
 
 ---
 
