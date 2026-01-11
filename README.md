@@ -69,4 +69,17 @@ To verify that the policy is working correctly on the Windows 10 client:
 This project demonstrates the efficiency of **centralized management**. By using Group Policy, administrators can ensure a uniform work environment, improve security, and reduce manual configuration time for every machine in the network.
 
 ---
+<h2>Screenshot:</h2>
+
+<p align="center">
+Program Result: <br/>
+<img src="https://imgur.com/Cl1rleS.png" height="80%" width="80%" alt="Program Result"/>
+<br />
+
+<p align="center">
+Program Result: <br/>
+<img src="https://imgur.com/9vkqCmG.png" height="80%" width="80%" alt="Program Result"/>
+<br />
+
+---
 *Developed by Silent Mucharira - January 2026*
