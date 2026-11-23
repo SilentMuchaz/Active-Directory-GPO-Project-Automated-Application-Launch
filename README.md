@@ -90,6 +90,6 @@ The output identified `CLIENT-01`, the `CORP\fatherman` user context, and **`New
 
 ## Technical report
 
-[Active Directory GPO — Automated Application Launch (PDF)](reports/01-active-directory-gpo-application-launch.pdf) · [Markdown report](reports/01-active-directory-gpo-application-launch.md)
+[Active Directory GPO — Automated Application Launch (PDF)](01-active-directory-gpo-application-launch.pdf) · [Markdown report](01-active-directory-gpo-application-launch.md)
 
 *Project by Silent Mucharira · January 2026 · Isolated learning lab.*
