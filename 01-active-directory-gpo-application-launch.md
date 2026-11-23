@@ -20,7 +20,7 @@ Configure a domain-based user Group Policy Object to open Microsoft Edge at user
 
 Active Directory Users and Computers showed the `USERS` OU beneath `CORP`, containing the domain test account.
 
-![USERS OU in Active Directory](../evidence/01-active-directory-users-ou.jpg)
+![USERS OU in Active Directory](/evidence/01-active-directory-users-ou.jpg)
 
 ## 2. GPO created
 
@@ -36,25 +36,25 @@ Enabled `User Configuration → Policies → Administrative Templates → System
 C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 ```
 
-![Enabled logon policy and executable path](../evidence/03-logon-policy-executable.png)
+![Enabled logon policy and executable path](/evidence/03-logon-policy-executable.png)
 
 ## 4. OU link and settings confirmed
 
 Linked **`New`** to `CORP / USERS`. The linked-policy view showed the link enabled, and the GPO Settings tab displayed the configured rule.
 
-![Linked GPO for USERS OU](../evidence/04-gpo-linked-to-users-ou.png)
+![Linked GPO for USERS OU](/evidence/04-gpo-linked-to-users-ou.png)
 
-![Settings tab showing configured logon policy](../evidence/05-policy-settings-summary.png)
+![Settings tab showing configured logon policy](/evidence/05-policy-settings-summary.png)
 
 ## 5. Client validation
 
 The test account was signed in on Windows 10. Microsoft Edge was documented open in the user session. `gpresult /r` showed `CORP\fatherman` on `CLIENT-01` and listed **`New`** under *Applied Group Policy Objects*.
 
-![Windows 10 domain account logon](../evidence/06-windows-client-logon.jpg)
+![Windows 10 domain account logon](/evidence/06-windows-client-logon.jpg)
 
-![Microsoft Edge open after sign-in](../evidence/07-edge-open-after-logon.jpg)
+![Microsoft Edge open after sign-in](/evidence/07-edge-open-after-logon.jpg)
 
-![gpresult listing applied GPO New](../evidence/08-gpresult-applied-policy.png)
+![gpresult listing applied GPO New](/evidence/08-gpresult-applied-policy.png)
 
 ## Findings
 
